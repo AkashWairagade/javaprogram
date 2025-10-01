@@ -41,6 +41,34 @@ public class DynamicArray {
 
    }
 
+   public int max() {
+        int max = Integer.MIN_VALUE;
+
+       for (int i = 0; i <size ; i++) {
+           if ( arrays[i] >max ){
+               max=arrays[i];
+           }
+
+       }
+       System.out.println("max number is "+max);
+        return max;
+   }
+
+   public void reverse() {
+        int left=0;
+        int right=size-1;
+        //[10,20,30,40]
+        while (left < right){
+            int temp=arrays[left];
+            arrays[left]=arrays[right];
+            arrays[right] = temp;
+            left ++;
+            right --;
+        }
+
+
+   }
+
 
 
 }
