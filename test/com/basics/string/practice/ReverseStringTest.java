@@ -10,6 +10,7 @@ class ReverseStringTest {
         ReverseString rs = new ReverseString();
         char[] input = {'a', 'b', 'c', 'd'};
         char[] expected = {'d', 'c', 'b', 'a'};
+
         assertArrayEquals(expected, rs.reverTest(input));
     }
 

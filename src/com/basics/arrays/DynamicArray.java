@@ -33,8 +33,8 @@ public class DynamicArray {
             throw new InvalidInput("Index is not in range !!");
         }
         result=arrays[index];
-        for (int i=index ; i< arrays.length-1; i++) {
-            arrays[index] =arrays[++index];
+        for (int i=index ; i< size; i++) {
+            arrays[i] =arrays[i+1];
         }
         size--;
         return result;
@@ -68,6 +68,15 @@ public class DynamicArray {
 
 
    }
+
+    public int indexOf (int element) {
+        for (int i = 0; i < size; i++) {
+            if (arrays[i]==element){
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
 
