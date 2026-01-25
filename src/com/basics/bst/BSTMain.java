@@ -1,4 +1,4 @@
-package com.basics.arrays.bst;
+package com.basics.bst;
 
 public class BSTMain {
     public static void main(String[] args) {
